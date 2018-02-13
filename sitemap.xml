@@ -3,17 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hooskers.github.io/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hooskers.github.io/authors/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hooskers.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hooskers.github.io/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hooskers.github.io/</loc>
     <priority>0</priority>
   </url>
   
