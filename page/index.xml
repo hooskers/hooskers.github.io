@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Wade Johnson</title>
-    <link>https://hooskers.github.io/</link>
-    <description>Recent content in Home on Wade Johnson</description>
+    <title>Pages on Wade Johnson</title>
+    <link>https://hooskers.github.io/page/</link>
+    <description>Recent content in Pages on Wade Johnson</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="https://hooskers.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hooskers.github.io/page/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

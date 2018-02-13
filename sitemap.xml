@@ -17,6 +17,15 @@
   </url>
   
   <url>
+    <loc>https://hooskers.github.io/page/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hooskers.github.io/resume/</loc>
+  </url>
+  
+  <url>
     <loc>https://hooskers.github.io/tags/</loc>
     <priority>0</priority>
   </url>
