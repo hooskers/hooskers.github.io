@@ -4,12 +4,12 @@
 <head>
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<meta name='description' content=' Trellis Trellis is a simpler clone of Trello. You can create/delete boards, lists, and cards and drag/drop lists and cards to rearrange/move them.
-Tools:  React Redux React Router Webpack Emotion React Beautiful DnD Lodash  '>
+<meta name='description' content='PDX Live Transit PDX Live Transit consists of a backend piece and a frontend piece that use Trimet&rsquo;s Realtime GTFS API to show all of their vehicles in the Portland metro area on a map in realtime.
+The backend is a simple Express server that has Javascript code compiled from Realtime GTFS protobufs. All it does is get the vehicle positions from Trimet&rsquo;s endpoint, marshals it to JSON, and sends it to the client.'>
 
 <meta property='og:title' content='Projects • Wade Johnson'>
-<meta property='og:description' content=' Trellis Trellis is a simpler clone of Trello. You can create/delete boards, lists, and cards and drag/drop lists and cards to rearrange/move them.
-Tools:  React Redux React Router Webpack Emotion React Beautiful DnD Lodash  '>
+<meta property='og:description' content='PDX Live Transit PDX Live Transit consists of a backend piece and a frontend piece that use Trimet&rsquo;s Realtime GTFS API to show all of their vehicles in the Portland metro area on a map in realtime.
+The backend is a simple Express server that has Javascript code compiled from Realtime GTFS protobufs. All it does is get the vehicle positions from Trimet&rsquo;s endpoint, marshals it to JSON, and sends it to the client.'>
 <meta property='og:url' content='https://hooskers.github.io/projects/'>
 <meta property='og:site_name' content='Wade Johnson'>
 <meta property='og:type' content='article'><meta property='article:section' content='Page'><meta name='twitter:card' content='summary'>
@@ -107,11 +107,41 @@ Tools:  React Redux React Router Webpack Emotion React Beautiful DnD Lodash  '>
   <div class='container entry-content'>
   
 
-<h1 id="trellis-https-hooskers-github-io-trellis"><a href="https://hooskers.github.io/trellis" target="_blank">Trellis</a></h1>
+<h1 id="pdx-live-transit-https-hooskers-github-io-pdx-live-transit"><a href="https://hooskers.github.io/pdx-live-transit" target="_blank">PDX Live Transit</a></h1>
 
-<p>Trellis is a simpler clone of Trello. You can create/delete boards, lists, and cards and drag/drop lists and cards to rearrange/move them.</p>
+<p>PDX Live Transit consists of a <a href="https://github.com/hooskers/pdx-live-transit-server" target="_blank">backend piece</a> and a <a href="https://github.com/hooskers/pdx-live-transit" target="_blank">frontend piece</a> that use Trimet&rsquo;s Realtime GTFS API to show all of their vehicles in the Portland metro area on a map in realtime.</p>
+
+<p>The backend is a simple Express server that has Javascript code compiled from Realtime GTFS protobufs. All it does is get the vehicle positions from Trimet&rsquo;s endpoint, marshals it to JSON, and sends it to the client. Soon, it will be refactored into a GraphQL sever.</p>
+
+<p>The frontend is built in React and shows all of the Trimet vehicles in realtime using Google Maps. The vehicles are arrows that point in the same direction as the vehicle and their color matches their line color (or black for buses).
+Hovering over a vehicle&rsquo;s card in the sidebar will magnify the vehicle&rsquo;s marker and make all other markers transparent. Clicking a vehicle&rsquo;s card will lock in the same effect for a single vehicle.</p>
+
+<h4 id="limitations">Limitations:</h4>
+
+<ul>
+<li>The backend is hosted on Heroku&rsquo;s free tier, so the first load may take a while while the instance spins up.</li>
+<li>The sidebar uses <code>backdrop-filter</code> for a blur effect which is only supported in Safari. Can be seen in Chrome by turning on the <code>Enable Experimental Web Platform Features</code> flag in Chrome&rsquo;s <code>chrome://flags</code>.</li>
+<li>The sidebar filter only filters on the vehicle&rsquo;s labels (like <code>Blue to Hillsboro</code> or <code>4 To St. Johns</code>). Soon there will be functionality to filter on current stop, and vehicle type.</li>
+<li>Stop IDs are shown instead of the name. Like <code>In transit to 1448</code> instead of <code>In transit to SE Division &amp; 30th</code>. I probably won&rsquo;t fix that until I do the GraphQL refactor on the backend since it requires more informtion than is given from Trimet&rsquo;s vehicle positions endpoint.</li>
+</ul>
 
 <h4 id="tools">Tools:</h4>
+
+<ul>
+<li><a href="https://reactjs.org" target="_blank">React</a></li>
+<li><a href="https://webpack.js.org" target="_blank">Webpack</a></li>
+<li><a href="https://emotion.sh" target="_blank">Emotion</a></li>
+<li><a href="https://github.com/tomchentw/react-google-maps" target="_blank">React Google Maps</a></li>
+<li><a href="https://lodash.com" target="_blank">Lodash</a></li>
+</ul>
+
+<hr />
+
+<h1 id="trellis-https-hooskers-github-io-trellis"><a href="https://hooskers.github.io/trellis" target="_blank">Trellis</a></h1>
+
+<p>Trellis is a simpler clone of Trello. You can create/delete boards, lists, and cards. You can drag and drop lists and cards to rearrange them and also drag and drop cards to move them between lists.</p>
+
+<h4 id="tools-1">Tools:</h4>
 
 <ul>
 <li><a href="https://reactjs.org" target="_blank">React</a></li>
