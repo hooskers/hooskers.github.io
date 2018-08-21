@@ -25,7 +25,8 @@ The backend is a simple Express server that has JavaScript code compiled from Re
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://hooskers.github.io/resume/</guid>
-      <description>Experience Front End Developer NetXposure, Inc. Digital asset management company in Portland, Oregon 2018 - Present
+      <description>Experience Front End Developer NetXposure, Inc. Digital asset management company in Portland, Oregon
+2018 - Present
  Implemented new features and fixed bugs filed in Jira for the front end (Backbone.js SPA) and the back end (Java server/RPC API) Migrating Backbone views to React - Designed render prop component that updates when a Backbone collection/model event is triggered to increase React/Backbone code abstraction Updated Jenkins pipeline to provide greater stability and finer controls for builds Optimized webpack config which decreased build times from ~30 seconds to ~20 seconds per dev build  QA Engineer NetXposure, Inc.</description>
     </item>
     
