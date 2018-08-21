@@ -5,33 +5,39 @@
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <meta name='description' content='PDX Live Transit PDX Live Transit consists of a backend piece and a frontend piece that use Trimet&rsquo;s Realtime GTFS API to show all of their vehicles in the Portland metro area on a map in realtime.
-The backend is a simple Express server that has Javascript code compiled from Realtime GTFS protobufs. All it does is get the vehicle positions from Trimet&rsquo;s endpoint, marshals it to JSON, and sends it to the client.'>
+The backend is a simple Express server that has JavaScript code compiled from Realtime GTFS protobufs. All it does is get the vehicle positions from Trimet&rsquo;s endpoint, marshals it to JSON, and sends it to the client.'>
+<meta name='theme-color' content='#ffcd00'>
 
 <meta property='og:title' content='Projects • Wade Johnson'>
 <meta property='og:description' content='PDX Live Transit PDX Live Transit consists of a backend piece and a frontend piece that use Trimet&rsquo;s Realtime GTFS API to show all of their vehicles in the Portland metro area on a map in realtime.
-The backend is a simple Express server that has Javascript code compiled from Realtime GTFS protobufs. All it does is get the vehicle positions from Trimet&rsquo;s endpoint, marshals it to JSON, and sends it to the client.'>
+The backend is a simple Express server that has JavaScript code compiled from Realtime GTFS protobufs. All it does is get the vehicle positions from Trimet&rsquo;s endpoint, marshals it to JSON, and sends it to the client.'>
 <meta property='og:url' content='https://hooskers.github.io/projects/'>
 <meta property='og:site_name' content='Wade Johnson'>
-<meta property='og:type' content='article'><meta property='article:section' content='Page'><meta name='twitter:card' content='summary'>
+<meta property='og:type' content='article'><meta property='article:section' content='page'><meta name='twitter:card' content='summary'>
 
-<meta name="generator" content="Hugo 0.36" />
+<meta name="generator" content="Hugo 0.47.1" />
 
   <title>Projects • Wade Johnson</title>
   <link rel='canonical' href='https://hooskers.github.io/projects/'>
   
   
   <link rel='icon' href='/favicon.ico'>
-<link rel='stylesheet' href='/assets/css/main.22d77285.css'><link rel='stylesheet' href='/css/custom.css'>
+<link rel='stylesheet' href='/assets/css/main.4267b3fa.css'><link rel='stylesheet' href='/css/custom.css'><style>
+:root{--color-accent:#ffcd00;}
+</style>
+
+  
+
 </head>
 
 
-<body class='page type-page has-sidebar sidebar-sticky'>
+<body class='page type-page has-sidebar'>
 
   <div class='site'>
 
-    <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
+    <div id='sidebar' class='sidebar'>
+  <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
 
-<div id='sidebar' class='sidebar'>
   <div class='container'><section class='widget widget-about sep-after'>
   <header>
     
@@ -45,25 +51,39 @@ The backend is a simple Express server that has Javascript code compiled from Re
     Wade Johnson
     </h2>
     <div class='desc'>
-    Javascript Engineer
+    JavaScript Engineer
     </div>
   </header>
 
 </section>
 </div>
+
+  <div class='sidebar-overlay'></div>
 </div>
 
     <div class='main'>
 
-      <nav id='main-menu' class='main-menu' aria-label='Main Menu'>
+      <nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
   <div class='container'>
     <a class='screen-reader-text' href='#content'>Skip to Content</a>
 
-<button id='sidebar-toggler' class='hamburger hamburger--arrow sidebar-toggler' type='button' aria-controls='sidebar' aria-expanded='false'>
+<button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
   <span class='screen-reader-text'>Toggle Sidebar</span>
-  <span class="hamburger-box">
-    <span class="hamburger-inner"></span>
-  </span>
+  <span class='open'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+  
+</svg>
+</span>
+  <span class='close'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+  
+</svg>
+</span>
 </button>
     <ul><li class='item'>
         <a href='/'>Home</a>
@@ -75,10 +95,9 @@ The backend is a simple Express server that has Javascript code compiled from Re
   </div>
 </nav>
 
-
       <header id='header' class='header site-header'>
         <div class='container sep-after'>
-          <div class='header-info'><p class='site-title title'>Wade Johnson</p><p class='desc site-desc'>Javascript Engineer</p>
+          <div class='header-info'><p class='site-title title'>Wade Johnson</p><p class='desc site-desc'>JavaScript Engineer</p>
           </div>
         </div>
       </header>
@@ -105,11 +124,11 @@ The backend is a simple Express server that has Javascript code compiled from Re
   <div class='container entry-content'>
   
 
-<h1 id="pdx-live-transit-https-hooskers-github-io-pdx-live-transit"><a href="https://hooskers.github.io/pdx-live-transit" target="_blank">PDX Live Transit</a></h1>
+<h1 id="pdx-live-transit-https-wade-codes-pdx-live-transit"><a href="https://wade.codes/pdx-live-transit" target="_blank">PDX Live Transit</a></h1>
 
 <p>PDX Live Transit consists of a <a href="https://github.com/hooskers/pdx-live-transit-server" target="_blank">backend piece</a> and a <a href="https://github.com/hooskers/pdx-live-transit" target="_blank">frontend piece</a> that use Trimet&rsquo;s Realtime GTFS API to show all of their vehicles in the Portland metro area on a map in realtime.</p>
 
-<p>The backend is a simple Express server that has Javascript code compiled from Realtime GTFS protobufs. All it does is get the vehicle positions from Trimet&rsquo;s endpoint, marshals it to JSON, and sends it to the client. Soon, it will be refactored into a GraphQL sever.</p>
+<p>The backend is a simple Express server that has JavaScript code compiled from Realtime GTFS protobufs. All it does is get the vehicle positions from Trimet&rsquo;s endpoint, marshals it to JSON, and sends it to the client. Soon, it will be refactored into a GraphQL sever.</p>
 
 <p>The frontend is built in React and shows all of the Trimet vehicles in realtime using Google Maps. The vehicles are arrows that point in the same direction as the vehicle and their color matches their line color (or black for buses).
 Hovering over a vehicle&rsquo;s card in the sidebar will magnify the vehicle&rsquo;s marker and make all other markers transparent. Clicking a vehicle&rsquo;s card will lock in the same effect for a single vehicle.</p>
@@ -120,7 +139,7 @@ Hovering over a vehicle&rsquo;s card in the sidebar will magnify the vehicle&rsq
 <li>The backend is hosted on Heroku&rsquo;s free tier, so the first load may take a while while the instance spins up.</li>
 <li>The sidebar uses <code>backdrop-filter</code> for a blur effect which is only supported in Safari. Can be seen in Chrome by turning on the <code>Enable Experimental Web Platform Features</code> flag in Chrome&rsquo;s <code>chrome://flags</code>.</li>
 <li>The sidebar filter only filters on the vehicle&rsquo;s labels (like <code>Blue to Hillsboro</code> or <code>4 To St. Johns</code>). Soon there will be functionality to filter on current stop, and vehicle type.</li>
-<li>Stop IDs are shown instead of the name. Like <code>In transit to 1448</code> instead of <code>In transit to SE Division &amp; 30th</code>. I probably won&rsquo;t fix that until I do the GraphQL refactor on the backend since it requires more informtion than is given from Trimet&rsquo;s vehicle positions endpoint.</li>
+<li>Stop IDs are shown instead of the name. Like <code>In transit to 1448</code> instead of <code>In transit to SE Division &amp; 30th</code>.</li>
 </ul>
 
 <h4 id="tools">Tools:</h4>
@@ -135,7 +154,7 @@ Hovering over a vehicle&rsquo;s card in the sidebar will magnify the vehicle&rsq
 
 <hr />
 
-<h1 id="trellis-https-hooskers-github-io-trellis"><a href="https://hooskers.github.io/trellis" target="_blank">Trellis</a></h1>
+<h1 id="trellis-https-wade-codes-trellis"><a href="https://wade.codes/trellis" target="_blank">Trellis</a></h1>
 
 <p>Trellis is a simpler clone of Trello. You can create/delete boards, lists, and cards. You can drag and drop lists and cards to rearrange them and also drag and drop cards to move them between lists.</p>
 
@@ -159,51 +178,11 @@ Hovering over a vehicle&rsquo;s card in the sidebar will magnify the vehicle&rsq
 
 
 
+
       </main>
 
       <footer id='footer' class='footer'>
-        <div class='container sep-before'>
-          <section class='widget widget-social_menu sep-after'><nav aria-label='Social Menu'>
-    <ul><li>
-        <a href='https://github.com/hooskers' target='_blank' rel='noopener'>
-          <span class='screen-reader-text'>Open Github account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  
-  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-  
-</svg>
-</a>
-      </li><li>
-        <a href='https://twitter.com/hooskers' target='_blank' rel='noopener'>
-          <span class='screen-reader-text'>Open Twitter account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  
-  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
-  
-</svg>
-</a>
-      </li><li>
-        <a href='mailto:wadej93@gmail.com' target='_blank' rel='noopener'>
-          <span class='screen-reader-text'>Contact via Email</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  
-  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-  <polyline points="22,6 12,13 2,6"/>
-  
-</svg>
-</a>
-      </li><li>
-        <a href='https://linkedin.com/in/wadejohnsontech' target='_blank' rel='noopener'>
-          <span class='screen-reader-text'>Open Linkedin account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  
-  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-  <rect x="2" y="9" width="4" height="12"/>
-  <circle cx="4" cy="4" r="2"/>
-  
-</svg>
-</a>
-      </li></ul>
-  </nav>
-</section>
-
-          <div class='copyright'>
+        <div class='container sep-before'><div class='copyright'>
   <p> &copy; 2018 Wade Johnson </p>
 </div>
 
@@ -211,7 +190,11 @@ Hovering over a vehicle&rsquo;s card in the sidebar will magnify the vehicle&rsq
       </footer>
 
     </div>
-  </div><div class='sidebar-overlay'></div><script src='/assets/js/main.89545a27.js'></script></body>
+  </div><script>window.__public_path__='\/assets\/js\/'</script>
+
+<script src='/assets/js/main.59f76c44.js'></script>
+
+</body>
 
 </html>
 
